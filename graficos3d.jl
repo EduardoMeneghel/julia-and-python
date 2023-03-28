@@ -5,7 +5,7 @@ Pkg.add("DataFrames")
 using PlotlyJS, CSV, DataFrames
 #Lendo CSV
 dados = CSV.File("grafico3d.csv") |> DataFrame
-matrix_dados = Matrix{Float64}(dados)
+matrix_dados = Matrix(dados)
 layout = Layout(
     title="Gráfico 3D",
     autosize=false,
